@@ -60,7 +60,7 @@ func main() {
 
 	fs := http.FileServer(http.Dir("public"))
 	router := http.NewServeMux()
-	fmt.Println("Starting server on port 8000")
+	fmt.Println("Lancé sur le PORT http://localhost:8000/")
 
 	router.HandleFunc("/", webAPI.Index)
 	router.HandleFunc("/register", webAPI.Register)
